@@ -1,7 +1,7 @@
 package entidades;
 
-import java.time.LocalDate;
 
+import java.time.LocalDateTime;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -14,8 +14,8 @@ public class Venda {
     @Id 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Integer codigo;
-    public LocalDate data;
-    public Double valorTotal;
+    public LocalDateTime horario;
+    public Integer valorTotal;
     public Integer quantidadeTotal;
 
     @ManyToOne
